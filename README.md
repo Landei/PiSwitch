@@ -32,7 +32,7 @@ Ist der Pi aber nur im eigenen Heimnetzwerk sollte dies kein Problem darstellen.
 ------------
 # Installation von rcswitch-pi und wiringpi
 
-Daher das rcswitch-pi wiringpi benötigt, muss dies auch zu erst installiert werden!
+Daher das rcswitch-pi auf wiringpi aufbaut, muss dies auch zu erst installiert werden!
 
 wiringPi:
 
