@@ -21,7 +21,7 @@ Wichtig: Der Steckdosen MÜSSEN über DIP-Schalter verfügen!
 
 ------------
 # Hinweis!
-Im Laufe der Installation werden dem Nutzer www-data Root-Rechte gegeben, damit die Script funktionieren.
+Im Laufe der Installation werden dem Nutzer www-data Root-Rechte gegeben, damit die Scripte funktionieren.
 Deswegen darf bei aktuellem Stand des Projektes KEINE Freigabe des Webports erfolgen.
 Wenn im Router das Portforwarding eingeschalten ist (für den Raspberry Pi und dem Webport) ist es möglich ohne entsprechender Absicherung den Pi zu hacken.
 Das ist ein sehr großes Sicherheitsrisiko.
@@ -32,7 +32,7 @@ Ist der Pi aber nur im eigenen Heimnetzwerk sollte dies kein Problem darstellen.
 ------------
 # Installation von rcswitch-pi und wiringpi
 
-Daher das rcswitch-pi auf wiringpi aufbaut, muss dies auch zu erst installiert werden!
+Daher das rcswitch-pi auf wiringpi aufbaut, muss dies auch zuerst installiert werden!
 
 wiringPi:
 
@@ -62,7 +62,7 @@ rcswitch-pi:
 
 Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft, kann dann PiSwitch installiert werden.
 
-1. Zwei Terminals öffnen, das eine mit dem Root-Nutzer versehen (wichtig) und im zwiten, mit "sudo visudo" öffnen
+1. Zwei Terminals öffnen, dass eine mit Root-Rechten versehen (wichtig, da als "Backup" falls Fehler auftreten) und im zweiten, mit "sudo visudo" öffnen
 2. Folgenden Code am Ende der Datei hinzufügen:
 
    
