@@ -34,6 +34,7 @@ Ist der Pi aber nur im eigenen Heimnetzwerk sollte dies kein Problem darstellen.
 Daher das rcswitch-pi wiringpi benötigt, muss dies auch zu erst installiert werden!
 
 wiringPi:
+
 1. sudo apt-get update && sudo apt-get upgrade
 2. sudo apt-get install git-core
 3. git clone git://git.drogon.net/wiringPi
@@ -41,6 +42,7 @@ wiringPi:
 5. ./build
 
 rcswitch-pi:
+
 (0. sudo apt-get update && sudo apt-get upgrade)
 1. git clone https://github.com/r10r/rcswitch-pi.git
 2. cd rcswitch-pi
@@ -61,8 +63,10 @@ Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft
 
 1. Zwei Terminals öffnen, das eine mit dem Root-Nutzer versehen (wichtig) und im zwiten, mit "sudo visudo" öffnen
 2. Folgenden Code am Ende der Datei hinzufügen:
+
 -----
-    #Funksteckdosen
+
+    #PiSwitch
     www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
     www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
     
