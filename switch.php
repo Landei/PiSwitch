@@ -59,16 +59,4 @@ if(isset($_POST['sent30'])){
 }
 
 
-if(isset($_POST['kette1'])){
- shell_exec('sudo script/kette1.sh');
- echo "<script type='text/javascript'>alert('$name4 angeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
-if(isset($_POST['kette0'])){
- shell_exec('sudo script/kette0.sh');
- echo "<script type='text/javascript'>alert('$name4 ausgeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
 ?>
