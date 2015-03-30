@@ -80,7 +80,7 @@
 
 <div id="footer_container">
  <div id="footer">
-  <div>Version: 1.2  &#xa9 2015 <a href="http://twitter.com/landei00" target="_blank">Landei00</a></div>
+  <div>Version: 1.2  &#xa9 2015 <a href="http://twitter.com/piswitch_de" target="_blank">Twitter</a></div>
   <div>Fehler gefunden oder Fragen? <a href="mailto:piswitch@landei.pfweb.eu">piswitch@landei.pfweb.eu</div></a>
   <div>-Raspberry Pi is a trademark of the Raspberry Pi Foundation-</div>
  </div>
