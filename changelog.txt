@@ -1,0 +1,24 @@
+---------------------------
+   PiSwitch - Changelog
+---------------------------
+
+V 1.2
+- Bezeichnung frei wälbar
+- Lichterkette hinzugefügt
+
+---------------------------
+
+V 1.1
+- Genauigkeit verbessert
+- Footer angepasst
+- Parameter hinzugefügt
+
+---------------------------
+
+V 1.0
+- erste Version
+- Footer hinzugefügt
+- Buttons formatiert
+- Layout optimiert
+
+---------------------------
