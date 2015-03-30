@@ -43,7 +43,7 @@ wiringPi:
 
 rcswitch-pi:
 
-(0. sudo apt-get update && sudo apt-get upgrade)
+0. sudo apt-get update && sudo apt-get upgrade
 1. git clone https://github.com/r10r/rcswitch-pi.git
 2. cd rcswitch-pi
 3. make
@@ -64,12 +64,10 @@ Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft
 1. Zwei Terminals öffnen, das eine mit dem Root-Nutzer versehen (wichtig) und im zwiten, mit "sudo visudo" öffnen
 2. Folgenden Code am Ende der Datei hinzufügen:
 
-
     #PiSwitch
     www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
     www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
     
-
 Achtung!: Mit "visudo" wird im Anschluss der Syntax überprüft. Wenn in der Datei ein Fehler ist, kann man sich später nicht mehr als root anmelden. Außerdem muss in der Datei am Ende IMMER eine freie Zeile sein! Evtl. muss auch der Pfad zu PiSwitch und rcswitch-pi geändert werden (auf Groß- u. Kleinschreibung achten!!!)
 
 3. Mit "git clone https://github.com/Landei/PiSwitch.git" PiSwitch herunterladen
