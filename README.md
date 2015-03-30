@@ -67,8 +67,11 @@ Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft
 
    
 * #Funksteckdosen
-* www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
-* www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
+*www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
+*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
+*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/script/*
+*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/status/*
+
 
 
 Achtung!: Mit "visudo" wird im Anschluss der Syntax überprüft. Wenn in der Datei ein Fehler ist, kann man sich später nicht mehr als root anmelden. Außerdem muss in der Datei am Ende IMMER eine freie Zeile sein! Evtl. muss auch der Pfad zu PiSwitch und rcswitch-pi geändert werden (auf Groß- u. Kleinschreibung achten!!!)
