@@ -66,11 +66,11 @@ Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft
 2. Folgenden Code am Ende der Datei hinzufügen:
 
    
-* #Funksteckdosen
-*www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
-*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
-*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/script/*
-*www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/status/*
+- #Funksteckdosen
+- www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
+- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
+- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/script/*
+- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/status/*
 
 
 
