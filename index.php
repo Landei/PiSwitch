@@ -4,9 +4,6 @@
   <title>PiSwitch</title>
   <link href="style.css" media="screen" type="text/css" rel="stylesheet">
   <link rel="shotcut icon" type="image/x-icon" href="images/fav00icon.ico">
-<?php
-$start = microtime(true);
-?>
  </head>
 
 <?php
@@ -52,14 +49,6 @@ $start = microtime(true);
  <form method="post" action="switch.php">
   <input type="submit" name="sent30" value="<?php echo $name3; ?> aus" class="switchoff">
 </p>
-
-<p>
- <form method="post" action="switch.php">
-  <input type="submit" name="kette1" value="<?php echo $name4; ?> an" class="switchon">
-
- <form method="post" action="switch.php">
-  <input type="submit" name="kette0" value="<?php echo $name4; ?> aus" class="switchoff">
-</p>
 </form>
 
 <div class="status">
@@ -85,30 +74,9 @@ $start = microtime(true);
   <td><?php echo $s3; ?></td>
  </tr>
 
- <tr>
-  <td><?php echo $name4; ?></td>
-  <td><?php echo $s4; ?></td>
- </tr>
 </table>
 
 </div>
-
-<!---
-<input type="radio" name="steckdose" value="steckdose01">Steckdose 1<br></br></input>
-<input type="radio" name="steckdose" value="steckdose02">Steckdose 2<br></br></input>
-<input type="radio" name="steckdose" value="steckdose03">Steckdose 3<br></br></input>
-
-<script type="text/javascript">
-   JotForm.init(function(){
-      $('input_5').spinner({ imgPath:'http://d2g9qbzl5h49rh.cloudfront.net/images/', width: '60', maxValue:'59', minValue:'0', allowNegative: false, addAmount: 1, value:'0' });
-      $('input_4').spinner({ imgPath:'http://d2g9qbzl5h49rh.cloudfront.net/images/', width: '60', maxValue:'23', minValue:'0', allowNegative: false, addAmount: 1, value:'0' });
-      $('input_6').spinner({ imgPath:'http://d2g9qbzl5h49rh.cloudfront.net/images/', width: '60', maxValue:'59', minValue:'0', allowNegative: false, addAmount: 1, value:'0' });
-      $('input_7').spinner({ imgPath:'http://d2g9qbzl5h49rh.cloudfront.net/images/', width: '60', maxValue:'7', minValue:'1', allowNegative: false, addAmount: 1, value:'0' });
-      $('input_8').spinner({ imgPath:'http://d2g9qbzl5h49rh.cloudfront.net/images/', width: '60', maxValue:'12', minValue:'1', allowNegative: false, addAmount: 1, value:'0' });
-      JotForm.alterTexts({"required":"Dies ist ein Pflichtfeld.","requireOne":"Mindestens ein Feld ist erforderlich.","requireEveryRow":"Jede Zeile benötigt.","requireEveryCell":"Jede Zelle ist erforderlich.","alphabetic":"Dieses Feld darf nur Buchstaben enthalten","cyrillic":"Dieses Feld kann nur kyrillische Zeichen enthalten","numeric":"Dieses Feld darf nur numerische Werte enthalten","alphanumeric":"Dieses Feld darf nur Buchstaben und Zahlen enthalten.","currency":"Diese Feld darf nur Währungswerte enthalten.","fillMask":"Der Feldwert muss die Maske ausfüllen","incompleteFields":"Es gibt unvollständige Pflichtfelder. Bitte füllen Sie diese aus. ","uploadFilesize":"Die Dateigröße kann nicht größer sein als:","uploadFilesizemin":"Die Dateigröße darf nicht tiefer sein als:","confirmClearForm":"Sind Sie sicher, dass Sie das Formular leeren wollen?","lessThan":"Ihre Bewertung sollte geringer als oder gleich sein wie","email":"Geben Sie eine gültige E-Mail Adresse ein","uploadExtensions":"Sie k&ouml;nnen nur folgende Dateien hochladen:","pleaseWait":"Bitte warten Sie...","confirmEmail":"email ist nicht korrekt","submissionLimit":"Es tut uns leid. Es ist nur ein Eintrag erlaubt. Mehrfacheinträge sind in diesem Formular deaktiviert.","gradingScoreError":"Gesamtbewertung sollte nur weniger als oder gleich sein zu","inputCarretErrorA":"Die Eingabe sollte nicht kleiner sein als der Minimalwert:","inputCarretErrorB":"Ihre Eingabe sollte den vorgegebenen Maximalwert nicht übersteigen:","maxDigitsError":"Die maximal erlaubten Ziffern sind","minSelectionsError":"Die mindestgeforderte Anzahl an Selektionen ist","maxSelectionsError":"Die Maximalauswahl an erlaubten Selektionen ist","pastDatesDisallowed":"Datum darf nicht in der Vergangenheit liegen.","multipleFileUploads_typeError":"{file} hat einen ungültigen Erweiterung. Nur {extensions} sind erlaubt.","multipleFileUploads_sizeError":"{file} ist zu groß, die maximale Dateigröße ist {sizeLimit}.","multipleFileUploads_minSizeError":"{file} ist zu klein, minimale Dateigröße ist {minSizeLimit}.","multipleFileUploads_emptyError":"{file} ist leer, bitte wählen Sie wieder Dateien ohne es.","multipleFileUploads_onLeave":"Die Dateien werden gerade hochgeladen. Wenn Sie die Seite jetzt verlassen, wird der Upload abgebrochen.","multipleFileUploads_fileLimitError":"Nur {fileLimit} Dateiuploads sind erlaub!","generalError":"In Ihrem Formular sind Fehler. Bitte beheben Sie diese bevor Sie fortfahren.","generalPageError":"Es existieren Fehler auf dieser Seite. Bitte beseitigen Sie sie bevor Sie fortfahren.","wordLimitError":"Too many words. The limit is","characterLimitError":"Too many Characters.  The limit is"});
-   });
-</script>
---->
 
 <div id="footer_container">
  <div id="footer">
@@ -118,12 +86,5 @@ $start = microtime(true);
  </div>
 </div>
 
-<p>
-<?php
-$end = microtime(true);
-$zeit = $end - $start;
-echo "Zeit: ".$zeit."sek.!";
-?>
-</p>
 </body>
 </html>
