@@ -1,6 +1,6 @@
 # PiSwitch
 
-# Was macht PiSwitch?
+# Wozu dient PiSwitch?
 Mit PiSwitch können Funksteckdosen über ein Webinterface gesteuert werden.
 Dazu wird nur ein kleiner Sender benötigt und natürlich einen Raspberry Pi mit Webserver und PHP 5.
 Aktuell ist das Projekt nur für 3 Steckdosen ausgelegt, später wird es aber mehr geben.
