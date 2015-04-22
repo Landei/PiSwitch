@@ -1,7 +1,5 @@
 <?php
 
-header("Content-Type: text/html; charset=UTF-8");
-
 /* Konfiguration */
 
 $code = "00000"; //Code der DIP-Schalter der Steckdosen (0 = OFF; 1 = ON)
