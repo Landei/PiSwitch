@@ -10,53 +10,19 @@ include 'config.php';
 include 'name.php';
 header("Content-Type: text/html; charset=UTF-8");
 
-if(isset($_POST['sent11'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 1 1');
- shell_exec('sudo '.$path.'/./send '.$code.' 1 1');
- shell_exec('sudo script/11.sh');
- echo "<script type='text/javascript'>alert('$name1 angeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
 
-if(isset($_POST['sent10'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 1 0');
- shell_exec('sudo '.$path.'/./send '.$code.' 1 0');
- shell_exec('sudo script/10.sh');
- echo "<script type='text/javascript'>alert('$name1 ausgeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
+    
+foreach($_GET as $key in $value) {
+    if (substr($key, 0, 4) != "sent")
+        continue;
+    $num = substr($key, 3, 1);
+    $state = substr($key, 4, 1);
+    shell_exec($path . '/send ' . $code . ' ' . $num . ' ' . $state);
+    shell_exec('./script/regenerate.sh ' . $num . $state);
+    echo "<script type='text/javascript'>";
+    echo "alert('$name1 angeschalten');";
+    echo "window.location.href='index.php';";
+    echo "</script>";
 }
-
-if(isset($_POST['sent21'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 2 1');
- shell_exec('sudo '.$path.'/./send '.$code.' 2 1');
- shell_exec('sudo script/21.sh');
- echo "<script type='text/javascript'>alert('$name2 angeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
-if(isset($_POST['sent20'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 2 0');
- shell_exec('sudo '.$path.'/./send '.$code.' 2 0');
- shell_exec('sudo script/20.sh');
- echo "<script type='text/javascript'>alert('$name2  ausgeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
-if(isset($_POST['sent31'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 3 1');
- shell_exec('sudo '.$path.'/./send '.$code.' 3 1');
- shell_exec('sudo script/31.sh');
- echo "<script type='text/javascript'>alert('$name3 angeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
-if(isset($_POST['sent30'])){
- shell_exec('sudo '.$path.'/./send '.$code.' 3 0');
- shell_exec('sudo '.$path.'/./send '.$code.' 3 0');
- shell_exec('sudo script/30.sh');
- echo "<script type='text/javascript'>alert('$name3 ausgeschalten');</script>";
- echo "<script type='text/javascript'>window.location.href='index.php';</script>";
-}
-
 
 ?>
