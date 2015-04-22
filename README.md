@@ -62,22 +62,9 @@ rcswitch-pi:
 
 Wenn dann also die Hardware angeschlossen ist und der Webserver mit PHP 5 läuft, kann dann PiSwitch installiert werden.
 
-1. Zwei Terminals öffnen, dass eine mit Root-Rechten versehen (wichtig, da als "Backup" falls Fehler auftreten) und im zweiten, mit "sudo visudo" öffnen
-2. Folgenden Code am Ende der Datei hinzufügen:
-
-   
-- #Funksteckdosen
-- www-data ALL=NOPASSWD: /home/pi/rcswitch-pi/send
-- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/*
-- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/script/*
-- www-data ALL=NOPASSWD: /usr/share/nginx/www/piswitch/status/*
-
-
-
-Achtung!: Mit "visudo" wird im Anschluss der Syntax überprüft. Wenn in der Datei ein Fehler ist, kann man sich später nicht mehr als root anmelden. Außerdem muss in der Datei am Ende IMMER eine freie Zeile sein! Evtl. muss auch der Pfad zu PiSwitch und rcswitch-pi geändert werden (auf Groß- u. Kleinschreibung achten!!!)
-
-3. Mit "git clone https://github.com/Landei/PiSwitch.git" PiSwitch herunterladen
-4. Danach mit "sudo cp -R PiSwitch/ /usr/share/nginx/www/piswitch" PiSwitch kopieren
+1. sudo usermod -a -G gpio www-data
+2. Mit "git clone https://github.com/Landei/PiSwitch.git" PiSwitch herunterladen
+3. Danach mit "sudo cp -R PiSwitch/ /usr/share/nginx/www/piswitch" PiSwitch kopieren
 
 Fertig!
 
