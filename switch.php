@@ -8,10 +8,8 @@
 
 include 'config.php';
 include 'name.php';
-header("Content-Type: text/html; charset=UTF-8");
-
-
     
+// I'm still wondering: How do you turn your switch off?
 foreach($_GET as $key in $value) {
     if (substr($key, 0, 4) != "sent")
         continue;
