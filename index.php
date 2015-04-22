@@ -24,30 +24,17 @@
   <a href="http://raspberrypi.org" target="_blank"><img src="images/pi.png" width="33" height="40"></a>
  </h1>
 
+<form method="post" action="switch.php">
 <p>
- <form method="post" action="switch.php">
   <input type="submit" name="sent11" value="<?php echo $name1; ?> an" class="switchon">
-
- <form method="post" action="switch.php">
   <input type="submit" name="sent10" value="<?php echo $name1; ?> aus" class="switchoff">
-</form>
-
 </p>
-
 <p>
- <form method="post" action="switch.php">
   <input type="submit" name="sent21" value="<?php echo $name2; ?> an" class="switchon">
-
- <form method="post" action="switch.php">
   <input type="submit" name="sent20" value="<?php echo $name2; ?> aus" class="switchoff">
-</form>
 </p>
-
 <p>
- <form method="post" action="switch.php">
   <input type="submit" name="sent31" value="<?php echo $name3; ?> an" class="switchon">
-
- <form method="post" action="switch.php">
   <input type="submit" name="sent30" value="<?php echo $name3; ?> aus" class="switchoff">
 </p>
 </form>
