@@ -1,3 +1,11 @@
+<?php
+    header("Content-Type: text/html; charset=UTF-8");
+    header("Expires: Mon, 1 Jan 2000 07:00:00 GMT");
+    header("Cache-Control: no-cache, no-store, must-revalidate");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
  <head>
@@ -5,19 +13,12 @@
   <link href="style.css" media="screen" type="text/css" rel="stylesheet">
   <link rel="shotcut icon" type="image/x-icon" href="images/fav00icon.ico">
  </head>
-
-<?php
- header("Content-Type: text/html; charset=UTF-8");
- header("Expires: Mon, 1 Jan 2000 07:00:00 GMT");
- header("Cache-Control: no-cache, no-store, must-revalidate");
- header("Cache-Control: post-check=0, pre-check=0", false);
- header("Pragma: no-cache");
- include 'status.php';
- include 'param.php';
- include 'name.php';
-?>
-
 <body>
+<?php
+    include 'status.php';
+    include 'param.php';
+    include 'name.php';
+?>
 
  <h1>PiSwitch - Interface
   <a href="http://raspberrypi.org" target="_blank"><img src="images/pi.png" width="33" height="40"></a>
