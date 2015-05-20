@@ -90,6 +90,8 @@ Fertig!
 
 ! Es gibt zwar eine settings.php , diese ist bisher aber noch ohne Funktion !
 
+2. Wenn der DS18B20 angeschlossen ist, muss in der Datei "therm.py" im script-Ordner noch die ID eingetragen werden, wo die Pfadangabe steht. Diese Info kann man aus dem Tutorial entnehmen.
+
 ------------
 Zum Schluss kann man dann am PC die Website aufrufen, indem man "[IP des Pi's]/piswitch" aufruft.
 Anschließend kann auch gleich die Funktionalität geprüft werden.
