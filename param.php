@@ -41,12 +41,14 @@ if(isset($_GET["sent30"])){
  shell_exec('sudo script/30.sh');
 }
 
+if($kette == '1')
+{
 if(isset($_GET["kette1"])){
  shell_exec('sudo script/kette1.sh');
 }
 
 if(isset($_GET["kette0"])){
  shell_exec('sudo script/kette0.sh');
-}
+}};
 
 ?>
