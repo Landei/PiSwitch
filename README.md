@@ -12,6 +12,7 @@ Aktuell ist das Projekt nur für 3 Steckdosen ausgelegt, später wird es aber me
 Wichtig: Der Steckdosen MÜSSEN über DIP-Schalter verfügen!
 3. Ein Raspberry Pi (egal welches Model)
 4. Jumpercable + evtl. Steckbrett
+5. (opt. ein DS18B20)
 
 ------------
 # Welche Software wird benötigt?
@@ -55,6 +56,7 @@ rcswitch-pi:
 1. Funksender anschließen
 (ATAD -> GPIO 17; VCC -> 5V; GND -> Ground)
 2. Code der DIP-Schalter an den Funksteckdosen ändern
+3. Für das Thermometer diese Anleitung nehmen: https://www.raspiprojekt.de/machen/basics/schaltungen/9-1wire-mit-temperatursensor-ds18b20.html
 
 ------------
 
@@ -84,8 +86,9 @@ Fertig!
 ------------
 # Konfiguration von PiSwitch
 
-1. Mit "sudo /usr/share/nginx/www/piswitch/config.php" den Code der DIP-Schalter ändern und evtl. den Pfad zu rcswitch-pi ändern
-2. Die Namen der Steckdosen kann in der Datei "name.php" geändert werden
+1. Mit "sudo /usr/share/nginx/www/piswitch/config.php" die gewünschten Einstellungen bearbeiten.
+
+! Es gibt zwar eine settings.php , diese ist bisher aber noch ohne Funktion !
 
 ------------
 Zum Schluss kann man dann am PC die Website aufrufen, indem man "[IP des Pi's]/piswitch" aufruft.
