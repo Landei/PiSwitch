@@ -19,7 +19,6 @@ $path = "/home/pi/rcswitch-pi";  //Pfad zu rcswitch (Standart: /home/pi/rcswitch
 $therm = '1'; //Thermometer (1: an  0: aus)
 $kette = '0'; //Lichterkette (1: an  0: aus)
 $background = '#009EFF'; //Farbe des Hintergrundes
-$version = '1.3'; //Version
 
 /* Namen der Steckdosen */
 
