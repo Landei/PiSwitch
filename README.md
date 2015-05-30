@@ -9,7 +9,7 @@ Aktuell ist das Projekt nur für 3 Steckdosen ausgelegt, später wird es aber me
 # Was wird benötigt?
 1. Ein 433MHz Funksender (http://goo.gl/0CpSmH)
 2. Die Funksteckdosen (http://goo.gl/jtSpMM)
-Wichtig: Der Steckdosen MÜSSEN über DIP-Schalter verfügen!
+Wichtig: Die Steckdosen MÜSSEN über DIP-Schalter verfügen!
 3. Ein Raspberry Pi (egal welches Model)
 4. Jumpercable + evtl. Steckbrett
 5. (opt. ein DS18B20)
