@@ -91,7 +91,7 @@ endif;
 </p>
 
 <div id="footer">
- <div>Version: <?php echo $version; ?>  &#xa9 2015 <a href="https://twitter.com/piswitch_de" target="_blank">Twitter</a></div>
+ <div>Version: 1.3 &#xa9 2015 <a href="https://twitter.com/piswitch_de" target="_blank">Twitter</a></div>
  <div>Fehler gefunden oder Fragen? <a href="mailto:piswitch@landei.pfweb.eu">piswitch@landei.pfweb.eu</div></a>
  <div>-Raspberry Pi is a trademark of the Raspberry Pi Foundation-</div>
 </div>
