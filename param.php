@@ -43,11 +43,11 @@ if(isset($_GET["sent30"])){
 
 if($kette == '1')
 {
-if(isset($_GET["kette1"])){
+if(isset($_GET["sent41"])){
  shell_exec('sudo script/kette1.sh');
 }
 
-if(isset($_GET["kette0"])){
+if(isset($_GET["sent40"])){
  shell_exec('sudo script/kette0.sh');
 }};
 
